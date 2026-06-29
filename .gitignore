@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+dist/
+lib/
+temp/
+release/
+sharepoint/
+*.log
+.DS_Store
+.rushstack/
+.heft/
+coverage/
