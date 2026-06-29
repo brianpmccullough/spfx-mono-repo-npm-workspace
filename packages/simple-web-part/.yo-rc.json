@@ -1,0 +1,23 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "simple-web-part",
+    "environment": "spo",
+    "packageManager": "npm",
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "SimpleWebPart",
+    "componentDescription": "Simple web part",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.22.3",
+    "sdksVersions": {},
+    "version": "1.23.0",
+    "libraryName": "simple-web-part",
+    "libraryId": "67e06625-bbb0-48ca-b3b4-d9d32bde6c98",
+    "solutionShortDescription": "simple-web-part description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}

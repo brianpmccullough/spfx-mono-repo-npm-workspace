@@ -27,6 +27,7 @@ packages/
 
 - Work in phases and pause after each phase for review and commit.
 - After each round of changes, review `AGENTS.md` and `/docs` for updates before reporting back.
+- In Codex, run install, generator, build, package, git write, and network-dependent commands outside the sandbox using escalation. The SPFx toolchain uses native/runtime probes such as `sass-embedded` that can fail inside the macOS sandbox even when the project is correct.
 - Use npm workspaces.
 - Keep version numbers centralized in this file's Tech Stack section when documenting project intent. Implementation files may still need exact versions.
 - Use the official SPFx Yeoman generator for all SPFx project scaffolding.
@@ -49,7 +50,7 @@ git status --short
 
 The README/docs version search should return no results unless a plan intentionally references a version. Keep project-intent version numbers in the Tech Stack section of this file.
 
-When SPFx or shared packages exist, also run the narrowest relevant build command for the changed workspace before pausing for review.
+When SPFx or shared packages exist, also run the narrowest relevant build command for the changed workspace before pausing for review. In Codex, run that build outside the sandbox.
 
 ## Prepare changes
 
