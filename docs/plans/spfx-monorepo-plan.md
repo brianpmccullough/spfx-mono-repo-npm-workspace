@@ -28,6 +28,10 @@ Pause after each phase for review and commit.
 
 When using Codex, run SPFx install, build, and package verification outside the sandbox. The SPFx Heft/Sass toolchain can fail inside the macOS sandbox even when the generated project is valid.
 
+## Implementation Notes
+
+- The Application Customizer generator scaffold is created from the supported no-framework extension template, then React is added in the package and mounted into the top placeholder.
+
 ## SPFx Constraints
 
 - Use the SharePoint Framework version listed in the Tech Stack section of `AGENTS.md`.

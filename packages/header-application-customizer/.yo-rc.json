@@ -1,0 +1,24 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "header-application-customizer",
+    "environment": "spo",
+    "packageManager": "npm",
+    "useGulp": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer",
+    "template": "none",
+    "componentName": "HeaderApplicationCustomizer",
+    "componentDescription": "Simple header application customizer",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.22.3",
+    "sdksVersions": {},
+    "version": "1.23.0",
+    "libraryName": "header-application-customizer",
+    "libraryId": "977aaf93-4566-45a7-898c-c5b19472890f",
+    "solutionShortDescription": "header-application-customizer description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}
