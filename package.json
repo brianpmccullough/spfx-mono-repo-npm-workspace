@@ -18,6 +18,9 @@
     "test": "npm run test --workspaces --if-present",
     "simple-web-part:build": "npm run build --workspace simple-web-part",
     "simple-web-part:clean": "npm run clean --workspace simple-web-part",
-    "simple-web-part:start": "npm run start --workspace simple-web-part"
+    "simple-web-part:start": "npm run start --workspace simple-web-part",
+    "header-application-customizer:build": "npm run build --workspace header-application-customizer",
+    "header-application-customizer:clean": "npm run clean --workspace header-application-customizer",
+    "header-application-customizer:start": "npm run start --workspace header-application-customizer"
   }
 }

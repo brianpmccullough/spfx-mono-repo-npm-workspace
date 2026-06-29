@@ -1,0 +1,16 @@
+.header {
+  align-items: center;
+  background: "[theme: themePrimary, default: #0078d4]";
+  box-sizing: border-box;
+  color: "[theme: white, default: #ffffff]";
+  display: flex;
+  font-size: 14px;
+  gap: 12px;
+  line-height: 20px;
+  min-height: 40px;
+  padding: 10px 24px;
+}
+
+.label {
+  font-weight: 600;
+}
