@@ -15,6 +15,9 @@
     "build": "npm run build --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present",
+    "simple-web-part:build": "npm run build --workspace simple-web-part",
+    "simple-web-part:clean": "npm run clean --workspace simple-web-part",
+    "simple-web-part:start": "npm run start --workspace simple-web-part"
   }
 }

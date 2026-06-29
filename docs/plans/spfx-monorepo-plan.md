@@ -24,6 +24,10 @@ packages/
 
 Pause after each phase for review and commit.
 
+## Verification Note
+
+When using Codex, run SPFx install, build, and package verification outside the sandbox. The SPFx Heft/Sass toolchain can fail inside the macOS sandbox even when the generated project is valid.
+
 ## SPFx Constraints
 
 - Use the SharePoint Framework version listed in the Tech Stack section of `AGENTS.md`.
