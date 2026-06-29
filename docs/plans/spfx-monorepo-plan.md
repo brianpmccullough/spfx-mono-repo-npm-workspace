@@ -1,6 +1,6 @@
 # SPFx Monorepo Plan
 
-This repo uses pnpm workspaces for a simple SPFx monorepo. Each SPFx project will remain an independent solution package and produce its own `.sppkg`.
+This repo uses npm workspaces for a simple SPFx monorepo. Each SPFx project will remain an independent solution package and produce its own `.sppkg`.
 
 Shared code will live in a plain workspace package and will be imported by SPFx source code, then bundled into each consuming SPFx solution. The SPFx packages must not depend on each other.
 
