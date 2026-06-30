@@ -31,6 +31,7 @@ When using Codex, run SPFx install, build, and package verification outside the 
 ## Implementation Notes
 
 - The Application Customizer and List View Command Set generator scaffolds are created from the supported no-framework extension templates, then React is added in the packages where a rendered component is needed.
+- The shared package uses plain TypeScript compiler tooling rather than Heft because it is a simple non-SPFx utilities package with no solution package output. This keeps setup small, avoids SPFx build lifecycle machinery, and still produces importable JavaScript and declaration files for the SPFx packages.
 
 ## SPFx Constraints
 
@@ -40,4 +41,3 @@ When using Codex, run SPFx install, build, and package verification outside the 
 - Keep each SPFx project deployable as its own `.sppkg`.
 - Do not configure tenant-wide deployment by default.
 - Do not create an SPFx library component for shared code.
-- Revisit Heft vs plain `tsc` before implementing the shared package.

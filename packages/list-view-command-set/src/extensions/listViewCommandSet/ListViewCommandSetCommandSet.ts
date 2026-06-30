@@ -1,4 +1,5 @@
 import { Log } from '@microsoft/sp-core-library';
+import { formatSharedMessage } from '@spfx-monorepo/shared';
 import {
   BaseListViewCommandSet,
   type Command,
@@ -39,10 +40,10 @@ export default class ListViewCommandSetCommandSet extends BaseListViewCommandSet
 
     switch (event.itemId) {
       case 'COMMAND_1':
-        this._showSelectionDialog(this.properties.commandOneText, selectedCount);
+        this._showSelectionDialog(formatSharedMessage('Shared utility', this.properties.commandOneText), selectedCount);
         break;
       case 'COMMAND_2':
-        this._showSelectionDialog(this.properties.commandTwoText, selectedCount);
+        this._showSelectionDialog(formatSharedMessage('Shared utility', this.properties.commandTwoText), selectedCount);
         break;
       default:
         throw new Error('Unknown command');
