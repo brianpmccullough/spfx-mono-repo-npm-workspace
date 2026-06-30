@@ -30,7 +30,7 @@ When using Codex, run SPFx install, build, and package verification outside the 
 
 ## Implementation Notes
 
-- The Application Customizer generator scaffold is created from the supported no-framework extension template, then React is added in the package and mounted into the top placeholder.
+- The Application Customizer and List View Command Set generator scaffolds are created from the supported no-framework extension templates, then React is added in the packages where a rendered component is needed.
 
 ## SPFx Constraints
 

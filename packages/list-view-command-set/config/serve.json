@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "customActions": {
+        "cb42db85-03c5-4d18-a2d7-f06ec5378f51": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "commandOneText": "One item is selected in the list.",
+            "commandTwoText": "This command is always visible."
+          }
+        }
+      }
+    },
+    "listViewCommandSet": {
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "customActions": {
+        "cb42db85-03c5-4d18-a2d7-f06ec5378f51": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "commandOneText": "One item is selected in the list.",
+            "commandTwoText": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
