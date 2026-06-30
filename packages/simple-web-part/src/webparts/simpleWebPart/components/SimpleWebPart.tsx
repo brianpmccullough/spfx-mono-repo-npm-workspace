@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { formatSharedMessage } from '@spfx-monorepo/shared';
 import styles from './SimpleWebPart.module.scss';
 import type { ISimpleWebPartProps } from './ISimpleWebPartProps';
 import { escape } from '@microsoft/sp-lodash-subset';
@@ -14,13 +15,14 @@ export default class SimpleWebPart extends React.Component<ISimpleWebPartProps> 
       hasTeamsContext,
       userDisplayName
     } = this.props;
+    const sharedEnvironmentMessage: string = formatSharedMessage('Shared utility', environmentMessage);
 
     return (
       <section className={`${styles.simpleWebPart} ${hasTeamsContext ? styles.teams : ''}`}>
         <div className={styles.welcome}>
           <img alt="" src={isDarkTheme ? welcomeDark : welcomeLight} className={styles.welcomeImage} />
           <h2>Well done, {escape(userDisplayName)}!</h2>
-          <div>{environmentMessage}</div>
+          <div>{sharedEnvironmentMessage}</div>
           <div>Web part property value: <strong>{escape(description)}</strong></div>
         </div>
         <div>

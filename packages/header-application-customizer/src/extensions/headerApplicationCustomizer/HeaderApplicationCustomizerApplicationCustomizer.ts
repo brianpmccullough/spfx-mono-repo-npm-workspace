@@ -1,4 +1,5 @@
 import { Log } from '@microsoft/sp-core-library';
+import { formatSharedMessage } from '@spfx-monorepo/shared';
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import {
@@ -46,7 +47,10 @@ export default class HeaderApplicationCustomizerApplicationCustomizer
 
     if (this._topPlaceholder?.domElement) {
       const element: React.ReactElement = React.createElement(Header, {
-        message: this.properties.message || 'Simple header application customizer'
+        message: formatSharedMessage(
+          'Shared utility',
+          this.properties.message || 'Simple header application customizer'
+        )
       });
 
       ReactDom.render(element, this._topPlaceholder.domElement);

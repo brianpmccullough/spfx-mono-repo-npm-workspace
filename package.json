@@ -12,17 +12,19 @@
     "npm": ">=10.9.8"
   },
   "scripts": {
-    "build": "npm run build --workspaces --if-present",
+    "build": "npm run shared:build && npm run build --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
-    "simple-web-part:build": "npm run build --workspace simple-web-part",
+    "shared:build": "npm run build --workspace @spfx-monorepo/shared",
+    "shared:clean": "npm run clean --workspace @spfx-monorepo/shared",
+    "simple-web-part:build": "npm run shared:build && npm run build --workspace simple-web-part",
     "simple-web-part:clean": "npm run clean --workspace simple-web-part",
     "simple-web-part:start": "npm run start --workspace simple-web-part",
-    "header-application-customizer:build": "npm run build --workspace header-application-customizer",
+    "header-application-customizer:build": "npm run shared:build && npm run build --workspace header-application-customizer",
     "header-application-customizer:clean": "npm run clean --workspace header-application-customizer",
     "header-application-customizer:start": "npm run start --workspace header-application-customizer",
-    "list-view-command-set:build": "npm run build --workspace list-view-command-set",
+    "list-view-command-set:build": "npm run shared:build && npm run build --workspace list-view-command-set",
     "list-view-command-set:clean": "npm run clean --workspace list-view-command-set",
     "list-view-command-set:start": "npm run start --workspace list-view-command-set"
   }
