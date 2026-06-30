@@ -1,0 +1,34 @@
+.summary {
+  color: "[theme: bodyText, default: #323130]";
+  min-width: 280px;
+  padding: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 12px;
+}
+
+.message,
+.count {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 12px;
+}
+
+.button {
+  background: "[theme: themePrimary, default: #0078d4]";
+  border: 0;
+  color: "[theme: white, default: #ffffff]";
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+  padding: 8px 16px;
+}
+
+.button:hover {
+  background: "[theme: themeDarkAlt, default: #106ebe]";
+}
