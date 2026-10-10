@@ -3,6 +3,7 @@ import {
   BaseApplicationCustomizer
 } from '@microsoft/sp-application-base';
 import { Dialog } from '@microsoft/sp-dialog';
+import { helloWorld } from '@spfxmonorepo/shared';
 
 import * as strings from 'MonorepoApplicationCustomizerApplicationCustomizerStrings';
 
@@ -30,7 +31,7 @@ export default class MonorepoApplicationCustomizerApplicationCustomizer
       message = '(No properties were provided.)';
     }
 
-    Dialog.alert(`Hello from ${strings.Title}:\n\n${message}`).catch(() => {
+    Dialog.alert(`Hello from ${strings.Title}:\n\n${message}\n\n${helloWorld}`).catch(() => {
       /* handle error */
     });
 

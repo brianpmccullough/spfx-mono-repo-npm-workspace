@@ -6,6 +6,7 @@ import {
   type ListViewStateChangedEventArgs
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
+import { helloWorld } from '@spfxmonorepo/shared';
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
@@ -37,12 +38,12 @@ export default class MonorepoCommandSetCommandSet extends BaseListViewCommandSet
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
     switch (event.itemId) {
       case 'COMMAND_1':
-        Dialog.alert(`${this.properties.sampleTextOne}`).catch(() => {
+        Dialog.alert(`${this.properties.sampleTextOne}\n\n${helloWorld}`).catch(() => {
           /* handle error */
         });
         break;
       case 'COMMAND_2':
-        Dialog.alert(`${this.properties.sampleTextTwo}`).catch(() => {
+        Dialog.alert(`${this.properties.sampleTextTwo}\n\n${helloWorld}`).catch(() => {
           /* handle error */
         });
         break;
