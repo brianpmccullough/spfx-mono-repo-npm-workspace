@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "monorepo-application-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/monorepoApplicationCustomizer/MonorepoApplicationCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/monorepoApplicationCustomizer/MonorepoApplicationCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MonorepoApplicationCustomizerApplicationCustomizerStrings": "lib/extensions/monorepoApplicationCustomizer/loc/{locale}.js"
+  }
+}

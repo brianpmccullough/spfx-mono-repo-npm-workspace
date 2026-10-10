@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "monorepo-webpart-1-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/monorepoWebpart1/MonorepoWebpart1WebPart.js",
+          "manifest": "./src/webparts/monorepoWebpart1/MonorepoWebpart1WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MonorepoWebpart1WebPartStrings": "lib/webparts/monorepoWebpart1/loc/{locale}.js"
+  }
+}

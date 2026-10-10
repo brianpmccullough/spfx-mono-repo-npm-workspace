@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "monorepo-command-set-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/monorepoCommandSet/MonorepoCommandSetCommandSet.js",
+          "manifest": "./src/extensions/monorepoCommandSet/MonorepoCommandSetCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MonorepoCommandSetCommandSetStrings": "lib/extensions/monorepoCommandSet/loc/{locale}.js"
+  }
+}
