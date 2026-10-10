@@ -1,6 +1,7 @@
 {
-  "name": "shared",
+  "name": "@spfxmonorepo/shared",
   "version": "1.0.0",
+  "private": true,
   "description": "a non-spfx package library that can be used by other spfx packages for shared code",
   "main": "lib/index.js",
   "scripts": {

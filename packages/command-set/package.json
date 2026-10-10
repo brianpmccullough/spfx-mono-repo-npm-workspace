@@ -12,24 +12,25 @@
     "start": "heft start --clean"
   },
   "dependencies": {
-    "tslib": "2.3.1",
-    "@microsoft/sp-core-library": "1.23.2",
     "@microsoft/decorators": "1.23.2",
+    "@microsoft/sp-core-library": "1.23.2",
+    "@microsoft/sp-dialog": "1.23.2",
     "@microsoft/sp-listview-extensibility": "1.23.2",
-    "@microsoft/sp-dialog": "1.23.2"
+    "@spfxmonorepo/shared": "*",
+    "tslib": "2.3.1"
   },
   "devDependencies": {
-    "@microsoft/eslint-plugin-spfx": "1.23.2",
     "@microsoft/eslint-config-spfx": "1.23.2",
-    "@microsoft/spfx-web-build-rig": "1.23.2",
+    "@microsoft/eslint-plugin-spfx": "1.23.2",
+    "@microsoft/sp-module-interfaces": "1.23.2",
     "@microsoft/spfx-heft-plugins": "1.23.2",
+    "@microsoft/spfx-web-build-rig": "1.23.2",
     "@rushstack/heft": "1.2.17",
     "@types/jest": "30.0.0",
     "@types/webpack-env": "~1.15.2",
     "css-loader": "~7.1.2",
     "eslint": "9.37.0",
-    "typescript": "~5.8.0",
-    "@microsoft/sp-module-interfaces": "1.23.2"
+    "typescript": "~5.8.0"
   },
   "overrides": {
     "@rushstack/heft": "1.2.17"
