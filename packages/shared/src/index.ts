@@ -1,0 +1,1 @@
+export const helloWorld = '<h1>Hello World from the shared component</h1>';

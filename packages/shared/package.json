@@ -1,0 +1,16 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "a non-spfx package library that can be used by other spfx packages for shared code",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "types": "lib/index.d.ts",
+  "devDependencies": {
+    "typescript": "~5.8.0"
+  }
+}
