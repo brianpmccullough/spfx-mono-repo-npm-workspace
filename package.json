@@ -11,6 +11,21 @@
     "clean": "npm run clean --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
-    "shared:build": "npm run build -w @spfxmonorepo/shared"
+    "shared:build": "npm run build -w @spfxmonorepo/shared",
+    "shared:clean": "npm run clean -w @spfxmonorepo/shared",
+    "webpart-1:build": "npm run shared:build && npm run build -w webpart-1",
+    "webpart-1:clean": "npm run clean -w webpart-1",
+    "webpart-1:start": "npm run shared:build && npm run start -w webpart-1",
+    "webpart-2:build": "npm run shared:build && npm run build -w webpart-2",
+    "webpart-2:clean": "npm run clean -w webpart-2",
+    "webpart-2:start": "npm run shared:build && npm run start -w webpart-2",
+    "application-customizer:build": "npm run shared:build && npm run build -w application-customizer",
+    "application-customizer:clean": "npm run clean -w application-customizer",
+    "application-customizer:start": "npm run shared:build && npm run start -w application-customizer",
+    "command-set:build": "npm run shared:build && npm run build -w command-set",
+    "command-set:clean": "npm run clean -w command-set",
+    "command-set:start": "npm run shared:build && npm run start -w command-set",
+    "shared:watch": "npm run build -w @spfxmonorepo/shared -- --watch",
+    "clean:node": "rm -rf node_modules packages/*/node_modules"
   }
 }
